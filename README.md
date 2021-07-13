@@ -2,7 +2,7 @@
 
 * C/C++
 * Linux/Ubuntu
-* Thư viện: [gmp.g](https://gmplib.org/)
+* Thư viện: [gmp.h](https://gmplib.org/)
 
 # Pedersen commitments
 ```
