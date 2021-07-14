@@ -5,20 +5,33 @@
 * Thư viện: [gmp.h](https://gmplib.org/)
 
 # Pedersen commitments
+* Compile
 ```
 g++ Pedersen_commitment.cpp -o Pedersen_commitment -lgmp
+```
+* Run
+```
 ./Pedersen_commitment
 ```
 
 # Pedersen commitments - Coin flipping
 
-* Alice
+### Alice
+* Compile
 ```
 g++ Alice.cpp -o alice -lgmp
+```
+* Run
+```
 ./alice
 ```
 
-* Bob
+### Bob
+* Compile
 ```
 g++ Bob.cpp -o bob -lgmp
+```
+* Run
+```
 ./bob
+```
