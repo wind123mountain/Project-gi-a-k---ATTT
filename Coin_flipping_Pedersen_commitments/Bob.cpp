@@ -46,7 +46,7 @@ int main(int argc, char const *argv[]){
     mpz_init(h);
     mpz_init(A);
 
-	char *ans = "1";
+	char ans[10];
 	char *mess = "1";
 	char lis[10] = {0};
 	fstream fin, fout;
@@ -98,7 +98,9 @@ int main(int argc, char const *argv[]){
 	fin.close();
 
 	cout<<"\n================================ ANSWER ================================\n";
-	cout<<"Answer: "<<ans<<"\n";
+	cout<<"Answer: ";
+	cin.ignore(1);
+	cin.getline(ans, 10);
 	send(sock, ans, strlen(ans), 0);
 	printf("Answer sent!\n");
 
