@@ -3,6 +3,7 @@
 * C/C++
 * Linux/Ubuntu
 * Thư viện: [gmp.h](https://gmplib.org/)
+* Demo: https://youtu.be/VxxKFCfEDow
 
 # Pedersen commitments
 * Compile
