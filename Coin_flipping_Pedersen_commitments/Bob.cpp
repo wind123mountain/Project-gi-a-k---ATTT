@@ -15,7 +15,7 @@ char output[MAX_SIZE]{0};
 char inp[MAX_SIZE]{0};
 
 int connection(){
-    if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0){
+	if ((sock = socket(AF_INET, SOCK_STREAM, 0)) < 0){
 		printf("\n Socket creation error \n");
 		return -1;
 	}
@@ -40,11 +40,11 @@ int connection(){
 int main(int argc, char const *argv[]){
 
 	mpz_t p, q, g, h, A;
-    mpz_init(p);
-    mpz_init(q);
-    mpz_init(g);
-    mpz_init(h);
-    mpz_init(A);
+	mpz_init(p);
+	mpz_init(q);
+	mpz_init(g);
+	mpz_init(h);
+	mpz_init(A);
 
 	char ans[10];
 	char *mess = "1";
@@ -85,10 +85,10 @@ int main(int argc, char const *argv[]){
 
 	cout<<"\n================================ COM ================================\n";
 	mpz_t com, r, x;
-    mpz_init(com);
-    mpz_init(r);
-    mpz_init(x);
-    bzero(lis, 10);
+	mpz_init(com);
+	mpz_init(r);
+	mpz_init(x);
+	bzero(lis, 10);
 	valread = read(sock , lis, 10);
 
 	fin.open("Bob.txt", ios::in);
@@ -117,17 +117,17 @@ int main(int argc, char const *argv[]){
 	mpz_set_str(r, inp, 10);
 
 	gmp_printf("\nx = %Zd\n\n", x);
-    gmp_printf("r = %Zd\n\n", r);
-    fin.close();
+	gmp_printf("r = %Zd\n\n", r);
+	fin.close();
 
-    bool res = verify(com, p, g, h, x, r);
+	bool res = verify(com, p, g, h, x, r);
 
-    if(res){
-        cout<<"Result: True\n\n";
-    }
-    else{
-        cout<<"Result: False\n\n";
-    }
+	if(res){
+	cout<<"Result: True\n\n";
+	}
+	else{
+	cout<<"Result: False\n\n";
+	}
 
 	mpz_clears(p, q, g, h, A, com, r, x, NULL);
 
