@@ -3,6 +3,8 @@
 * Max time: 22.0209s (#17)
 * Average time: 4.2077s
 
+![image](https://user-images.githubusercontent.com/57493825/125731979-1d01c207-bf97-41df-878b-83b3c1e1fb84.png)
+
 ![Screenshot from 2021-07-14 19-23-53](https://user-images.githubusercontent.com/57493825/125667956-e490500a-a953-4504-a661-d28fbf496a9d.png)
 ![Screenshot from 2021-07-14 19-23-59](https://user-images.githubusercontent.com/57493825/125668033-5f7b73ab-5cb0-4db6-a5b6-9515aaf27e1e.png)
 ![Screenshot from 2021-07-14 19-24-24](https://user-images.githubusercontent.com/57493825/125668041-e1762c5d-4842-4290-9b99-742ca819ed72.png)
